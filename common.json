@@ -1,14 +1,4 @@
 {
-    "apps": [
-        {
-            "name": "Music Blobs",
-            "url": "https://musicblobs.com"
-        },
-        {
-            "name": "Video Blobs",
-            "url": "https://videoblobs.com"
-        }
-    ],
     "assets": {
         "patreon_image": "https://c5.patreon.com/external/logo/become_a_patron_button@2x.png"
     },
