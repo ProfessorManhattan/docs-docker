@@ -8,4 +8,3 @@
 {{ load:.modules/docs/contributing/testing.md }}
 {{ load:.modules/docs/contributing/linting.md }}
 {{ load:.modules/docs/contributing/pull-requests.md }}
-
