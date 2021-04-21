@@ -10,8 +10,6 @@
   <a href="{{ website.homepage }}">Homepage</a>
   <span> | </span>
   <a href="{{ profile.github }}/docker-{{ dockerhub_slug }}">GitHub Mirror</a>
-  <span> | </span>
-  <a href="{{ repository.playbooks }}">Main Playbook</a>
 </h4>
 <p>
   <a href="{{ repository.group.dockerfile }}/{{ subgroup }}/{{ slug }}">
