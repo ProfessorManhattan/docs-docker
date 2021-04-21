@@ -61,8 +61,13 @@
         "playbooks": "https://gitlab.com/ProfessorManhattan/Playbooks",
         "project": {
             "androidstudio": "https://gitlab.com/megabyte-labs/ansible-roles/androidstudio",
+            "ansiblelint": "https://gitlab.com/megabyte-labs/dockerfile/ci-pipeline/ansible-lint",
+            "docker": "",
             "dockerslim": "https://gitlab.com/megabyte-labs/ansible-roles/dockerslim",
-            "node": "https://gitlab.com/megabyte-labs/ansible-roles/nodejs"
+            "hadolint": "https://gitlab.com/megabyte-labs/ansible-roles/hadolint",
+            "node": "https://gitlab.com/megabyte-labs/ansible-roles/nodejs",
+            "prettier": "https://gitlab.com/megabyte-labs/dockerfile/ci-pipeline/prettier",
+            "shellcheck": "https://gitlab.com/megabyte-labs/dockerfile/ci-pipeline/shellcheck"
         },
         "wrangler": "https://gitlab.com/megabyte-labs/wrangler"
     },
@@ -73,7 +78,9 @@
         "ansible_molecule_docs": "https://molecule.readthedocs.io/en/latest/",
         "dockerhub": "https://hub.docker.com/",
         "dockerhub_repository": "https://hub.docker.com/r/megabytelabs",
+        "dockerslim_github_page": "https://github.com/docker-slim/docker-slim",
         "documentation": "https://megabyte.space/docs",
+        "hadolint_github_page": "https://github.com/hadolint/hadolint",
         "homepage": "https://megabyte.space",
         "privacy_policy": "https://megabyte.space/privacy",
         "terms": "https://megabyte.space/terms"

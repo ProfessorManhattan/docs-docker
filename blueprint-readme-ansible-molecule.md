@@ -2,9 +2,9 @@
 {{ load:.modules/docs/readme/subheader.md }}
 {{ load:.modules/docs/readme/quick-description.md }}
 {{ template:toc }}
-{{ load:.modules/docs/readme/overview_molecule.md }}
+{{ load:.modules/docs/readme/overview-molecule.md }}
 {{ load:.modules/docs/readme/requirements.md }}
 {{ load:.modules/docs/readme/example.md }}
-{{ load:.modules/docs/readme/integrating_with_molecule.md }}
+{{ load:.modules/docs/readme/integrating-with-molecule.md }}
 {{ load:.modules/docs/readme/contributing-details.md }}
 {{ load:.modules/docs/readme/license.md }}

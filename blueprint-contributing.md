@@ -2,4 +2,9 @@
 {{ template:toc }}
 {{ load:.modules/docs/contributing/code-of-conduct.md }}
 {{ load:.modules/docs/contributing/overview.md }}
+{{ load:.modules/docs/contributing/philosophy.md }}
+{{ load:.modules/docs/contributing/requirements.md }}
+{{ load:.modules/docs/contributing/getting-started.md }}
+{{ load:.modules/docs/contributing/testing.md }}
+{{ load:.modules/docs/contributing/linting.md }}
 {{ load:.modules/docs/contributing/pull-requests.md }}
