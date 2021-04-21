@@ -4,6 +4,6 @@ When you are working on one of our Dockerfile projects, try asking yourself, "Ho
 
 * Reduces the size of the Docker container by converting it from a Ubuntu image to an Alpine image
 * Improves the security and reduces the size of the Docker container by including a configuration for providing a Dockerslim build
-* Linting the Dockerfile to conform with standards set in place by [Haskell Dockerfile Linter]({{ repository.group.ansible_roles}}/hadolint)
+* Linting the Dockerfile to conform with standards set in place by [Haskell Dockerfile Linter]({{ website.hadolint_github_page }})
 
 All of these improvements would be greatly appreciated by us and our community. After all, we want all of our Dockerfiles to be the best at what they do.

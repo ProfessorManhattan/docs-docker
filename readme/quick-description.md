@@ -1,1 +1,1 @@
-> {{ quick_description }}
+> {{ pkg.description }}

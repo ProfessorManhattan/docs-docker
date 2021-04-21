@@ -6,11 +6,11 @@ To get started when developing one of our Dockerfile projects (after you have in
 npm i
 ```
 
-This will set up a pre-commit hook that will automatically lint your commits before committing. It will also refresh the repository to include the latest configurations which ensures that other developers are using the same project code as you.
+This will set up a pre-commit hook that will automatically lint your commits before committing. It will also refresh the repository to include the latest configurations. This ensures that other developers are using the same project code as you.
 
 ### Descriptions of Build Scripts
 
-After you run `npm i`, you can view the various build commands by running `npm run info`. This will display a chart in your terminal with descriptions of build scripts that might look something like this:
+After you run `npm i`, you can view the various build commands by running `npm run info`. This will display a chart in your terminal with descriptions of the build scripts. It might look something like this:
 
 ```shell
 ❯ npm run info
