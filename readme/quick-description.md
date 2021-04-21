@@ -1,1 +1,1 @@
-> {{ pkg.description }}
+> <br/>{{ pkg.description }}<br/>
