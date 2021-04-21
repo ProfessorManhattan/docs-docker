@@ -6,7 +6,7 @@ Testing is an **extremely important** part of contributing to this project. Befo
 
 It is especially important to test Dockerslim builds. Dockerslim works by removing all the components in a container's operating system that it thinks are unnecessary. This can easily break things.
 
-For example, if you are testing a Dockerslim build that packages [`ansible-lint`]({{ repository.project.ansiblelint }}) into a slim container, you might be tempted to simply test it by running `docker exec -it MySlimAnsibleLint ansible-lint`. This will ensure that the `ansible-lint` command can be accessed but that is not enough. You should also test it by passing in files as a volume and command line arguments. It is **important** to test all common use cases. Some people might be using the `ansible-lint` container in CI where the files are injected into the Docker container and some people might be using an inline command to directly access `anible-lint` from the host.
+For example, if you are testing a Dockerslim build that packages [ansible-lint]({{ repository.project.ansiblelint }}) into a slim container, you might be tempted to simply test it by running `docker exec -it MySlimAnsibleLint ansible-lint`. This will ensure that the ansible-lint command can be accessed but that is not enough. You should also test it by passing in files as a volume and command line arguments. It is **important** to test all common use cases. Some people might be using the ansible-lint container in CI where the files are injected into the Docker container and some people might be using an inline command to directly access anible-lint from the host.
 
 ### Testing Web Apps
 

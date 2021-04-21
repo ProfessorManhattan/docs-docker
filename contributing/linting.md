@@ -1,6 +1,6 @@
 ## Linting
 
-We utilize several different linters to ensure that all our Dockerfile projects use similar design patterns. Linting sometimes even helps spot errors as well. The most important linter for Dockerfile projects is called Haskell Dockerfile Linter or hadolint. You can install it by utilizing our one-line installation method found in our [hadolint Ansible role]({{ repository.project.hadolint }}). In order for a merge request to be accepted, it has to successfully pass hadolint tests. For more information about hadolint, check out the [Haskell Dockerfile Linter GitHub page]({{ website.hadolint_github_page }}).
+We utilize several different linters to ensure that all our Dockerfile projects use similar design patterns. Linting sometimes even helps spot errors as well. The most important linter for Dockerfile projects is called Haskell Dockerfile Linter (or hadolint). You can install it by utilizing our one-line installation method found in our [hadolint Ansible role]({{ repository.project.hadolint }}). In order for a merge request to be accepted, it has to successfully pass hadolint tests. For more information about hadolint, check out the [Haskell Dockerfile Linter GitHub page]({{ website.hadolint_github_page }}).
 
 We also incorporate other linters that are run automatically whenever you commit code (assuming you have run `npm i` in the root of the project). These linters include:
 
