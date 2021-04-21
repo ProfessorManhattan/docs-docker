@@ -1,6 +1,6 @@
 ---
 stages:
-  - lint
+  - publish
 
 include:
-  - remote: https://gitlab.com/megabyte-space/gitlab-ci-templates/-/raw/master/shellcheck.gitlab-ci.yml
+  - remote: https://gitlab.com/megabyte-space/gitlab-ci-templates/-/raw/master/dockerfile-group.gitlab-ci.yml
