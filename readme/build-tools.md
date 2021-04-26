@@ -1,0 +1,3 @@
+### Build Tools
+
+You might notice that we have a lot of extra files considering that this repository basically boils down to a single Dockerfile. These extra files are meant to make team development easier, predictable, and enjoyable. If you have a recent version of [Node.js]({{ repository.project.node }}) installed, you can get started using our build tools by running `npm i` in the root of this repository. After that, you can run `npm run info` to see a list of the available development features. For more details, check out the [CONTRIBUTING.md]({{ repository.group.dockerfile }}/{{ subgroup }}/{{ slug }}/-/blob/master/CONTRIBUTING.md) file.

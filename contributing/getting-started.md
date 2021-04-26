@@ -2,7 +2,7 @@
 
 To get started when developing one of our Dockerfile projects (after you have installed the requirements mentioned above), the first command you need to run in the root of the project is:
 
-```
+```shell
 npm i
 ```
 

@@ -4,7 +4,7 @@ This repository contains documentation partials written in Markdown used for gen
 
 You can rebuild the documentation by running the following command in the parent repository's root folder:
 
-```
+```shell
 bash .update.sh
 ```
 

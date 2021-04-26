@@ -46,7 +46,8 @@
           "web_components": "https://gitlab.com/megabyte-labs/web-components"
         },
         "link": {
-            "dockerhub_ci_task": "https://gitlab.com/megabyte-labs/ci/gitlab-ci-templates/-/blob/master/dockerhub.gitlab-ci.yml"
+            "dockerhub_ci_task": "https://gitlab.com/megabyte-labs/ci/gitlab-ci-templates/-/blob/master/dockerhub.gitlab-ci.yml",
+            "dockerhub_ci_task_slim": "https://gitlab.com/megabyte-labs/ci/gitlab-ci-templates/-/blob/master/dockerhub-slim.gitlab-ci.yml"
         },
         "playbooks": "https://gitlab.com/ProfessorManhattan/Playbooks",
         "project": {
