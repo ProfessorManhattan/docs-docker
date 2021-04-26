@@ -1,4 +1,6 @@
 <h4>
+  <a href="{{ website.homepage }}">Homepage</a>
+  <span> | </span>
   <a href="{{ profile.dockerhub }}">DockerHub Profile</a>
   <span> | </span>
   <a href="{{ website.dockerhub_repository }}/{{ pkg.name }}">DockerHub Image</a>
@@ -6,8 +8,6 @@
   <a href="{{ repository.group.dockerfile }}/{{ subgroup }}/{{ slug }}/-/blob/master/CONTRIBUTING.md">Contributing</a>
   <span> | </span>
   <a href="{{ chat_url }}">Chat</a>
-  <span> | </span>
-  <a href="{{ website.homepage }}">Homepage</a>
   <span> | </span>
   <a href="{{ profile.github }}/docker-{{ pkg.name }}">GitHub Mirror</a>
 </h4>
