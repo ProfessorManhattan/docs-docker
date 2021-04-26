@@ -9,7 +9,7 @@ docker run -v ${PWD}:/work -w /work megabytelabs/{{ pkg.name }} {{ docker_comman
 This allows you to run {{ pretty_name }} without installing it locally. This could be good for security and also keeps your file system clean. You can also add a bash alias to your `~/.bashrc` file so that you can run the {{ pretty_name }} command at any time. To do this, add the following snippet to your `~/.bashrc` file (or equivalent):
 
 ```shell
-{{ slug }}() {
+{{ docker_command }}() {
     docker run -v ${PWD}:/work -w /work megabytelabs/{{ pkg.name }}:{{ preferred_tag }} {{ docker_command }}
 }
 ```
