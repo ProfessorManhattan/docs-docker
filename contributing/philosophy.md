@@ -13,5 +13,5 @@ All of these improvements would be greatly appreciated by us and our community. 
 * Whenever possible, use Alpine as the base image. It has a very small footprint so the container image downloads faster.
 * Whenever possible, choose an image with a `slim` tag. This is beneficial when, say, Alpine is incompatible with the requirements and you must use something besides an Alpine image.
 * Whenever possible, use the `latest` tag (or the latest slim tag, if available). Although this may seem prone to errors, our eco-system is in its' infancy and we would like to stay on top of the bleeding edge unless there is a really good reason not to.
-* Avoid using specific tags like `node:15.4.2`. Instead, we prefer `node:slim` or `node:latest` to be used.
+* Avoid using the latest tag (e.g. `node:latest`). Instead use specific versions like `node:15.4.2`. This makes debugging production issues easier.
 * If all else fails, feel free to use other base images as long as they come from a trusted provider (i.e. using `ubuntu:latest` is fine but using `bobmighthackme:latest` is not).
