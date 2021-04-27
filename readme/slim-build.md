@@ -4,7 +4,7 @@ Some of our repositories support creating a slim build via [DockerSlim](https://
 
 As a convienience feature, we include a command defined in `package.json` that should build the slim image. Just run `npm run build:slim` after running `npm i` (with [Node.js >9](https://gitlab.com/megabyte-labs/ansible-roles/nodejs) installed) in the root of this repository to build a slim build.
 
-To build and publish a slim Dockerfile to DockerHub, you can use the following as a starting point:
+To build and publish a slim Dockerfile to Docker Hub, you can use the following as a starting point:
 
 ```shell
 docker login -u "DOCKERHUB_USERNAME" -p "DOCKERHUB_PASSWORD" docker.io
