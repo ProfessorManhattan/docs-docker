@@ -2,7 +2,7 @@
 
 Some of our repositories support creating a slim build via [DockerSlim](https://gitlab.com/megabyte-labs/ansible-roles/dockerslim). According to [DockerSlim's GitHub page](https://github.com/docker-slim/docker-slim), slimming down containers reduces the final image size and improves the security of the image by reducing the attack surface. It makes sense to create a slim build for anything that supports it, including Alpine images. On their GitHub page, they report that some images can be reduced in size by up to 448.76X. This means that if your image is naturally 700MB then it can be reduced to 1.56MB! It works by removing everything that is unnecessary in the container image.
 
-As a convienience feature, we include a command defined in `package.json` that should build the slim image. Just run `npm run build:slim` after running `npm i` (with [Node.js >9](https://gitlab.com/megabyte-labs/ansible-roles/nodejs) installed) in the root of this repository to build a slim build.
+As a convenience feature, we include a command defined in `package.json` that should build the slim image. Just run `npm run build:slim` after running `npm i` (with [Node.js >9](https://gitlab.com/megabyte-labs/ansible-roles/nodejs) installed) in the root of this repository to build a slim build.
 
 To build and publish a slim Dockerfile to Docker Hub, you can use the following as a starting point:
 
