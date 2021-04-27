@@ -2,22 +2,28 @@
 
 Without having to clone this repository, you can pull the latest Dockerfile to have the image cached locally by running:
 
-```
+```shell
 docker pull megabytelabs/{{ pkg.name }}:latest
 ```
 
-### Building the Docker Container
+### Experimenting / Shelling Into Container
 
-You can modify this Dockerfile to suit your purposes. After you make changes to the Dockerfile, you can upload your custom container to [Docker Hub]({{ website.dockerhub }}) using the following code:
+Although this image is intended to be used with Ansible Molecule (which is described below), you can start the container and shell into it by running the following commands if you are curious:
 
+```shell
+docker run megabytelabs/{{ pkg.name }}:latest
+docker exec -it megabytelabs/{{ pkg.name }}:latest /bin/bash
 ```
-docker login -u "DOCKERHUB_USERNAME" -p "DOCKERHUB_PASSWORD" docker.io
-docker build --pull -t "DOCKERHUB_USERNAME/{{ pkg.name }}:latest" .
-docker push "DOCKERHUB_USERNAME/{{ pkg.name }}:latest"
+
+Note that after you exit from the shell session, the container will still be running. After you are done experimenting with the container, you can destroy it by running:
+
+```shell
+docker ps -a     # Copy the ID of the image you wish to delete
+docker rm <ID>
 ```
 
-Replace DOCKERHUB_USERNAME and DOCKERHUB_PASSWORD in the snippet above with your Docker Hub username and password. The commands will build the Docker image and upload it to Docker Hub. You can see this logic being implemented as a [GitLab CI task here]({{ repository.link.dockerhub_ci_task }}). This GitLab CI task works in conjunction with the `.gitlab-ci.yml` file in the root of this repository.
+Alternatively, you can shell into the container and have Docker automatically remove the container when you exit by running:
 
-### Build Tools
-
-You might notice that we have a lot of extra files considering that this repository basically boils down to a single Dockerfile. These extra files are meant to make team development easier, predictable, and enjoyable. If you have a recent version of [Node.js]({{ repository.project.node }}) installed, you can get started using our build tools by running `npm i` in the root of this repository. After that, you can run `npm run info` to see a list of the available development features. For more details, check out the [CONTRIBUTING.md]({{ repository.group.dockerfile }}/{{ subgroup }}/{{ slug }}/-/blob/master/CONTRIBUTING.md) file.
+```shell
+docker run -it --rm megabytelabs/{{ pkg.name }}:latest /bin/sh
+```
