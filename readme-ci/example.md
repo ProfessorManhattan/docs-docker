@@ -16,7 +16,7 @@ This allows you to run {{ pretty_name }} without installing it locally. This cou
 
 ### Integrating with GitLab CI
 
-The main purpose of this project is to build a Docker container that can be used in CI pipelines. If you want to incorporate this CI pipeline tool into a project then your first step would be to create a `.gitlab-ci.yml` file in the root of the repository that you would like to add it to. Your `.gitlab-ci.yml` file should look something like this:
+The main purpose of this project is to build a Docker container that can be used in CI pipelines. If you want to incorporate this CI pipeline tool into GitLab CI project then your first step would be to create a `.gitlab-ci.yml` file in the root of your repository that is hosted by GitLab. Your `.gitlab-ci.yml` file should look something like this:
 
 ```yaml
 ---
@@ -27,4 +27,4 @@ include:
   - remote: https://gitlab.com/megabyte-space/gitlab-ci-templates/-/raw/master/{{ slug }}.gitlab-ci.yml
 ```
 
-That is it! {{ pretty_name }} will now run anytime you commit code that matches the parameters laid out in the `remote:` file listed above. Ideally, for production, you should copy the source code from the `remote:` link above to another location and update the `remote:` link to the file's new location. That way you do not have to worry about any changes that are made to the `remote:` file.
+That is it! {{ pretty_name }} will now run anytime you commit code (that matches the parameters laid out in the `remote:` file above). Ideally, for production, you should copy the source code from the `remote:` link above to another location and update the `remote:` link to the file's new location. That way you do not have to worry about any changes that are made to the `remote:` file by our team.
