@@ -1,0 +1,1 @@
+**NOTE:** To use our compact image for {{ pretty_name }}, you must use the `:slim` tag. So, instead of using `megabytelabs/{{ slug }}` or `megabytelabs/{{ slug }}:latest`, you should specify the image as `megabytelabs/{{ slug }}:slim`.

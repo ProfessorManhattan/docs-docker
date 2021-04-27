@@ -1,6 +1,7 @@
 {{ load:.modules/docs/readme/header.md }}
 {{ load:.modules/docs/readme/subheader.md }}
 {{ load:.modules/docs/readme/quick-description.md }}
+{{ load:.modules/docs/readme/slim-disclaimer.md }}
 {{ template:toc }}
 {{ load:.modules/docs/readme-ci/overview.md }}
 {{ load:.modules/docs/readme/requirements.md }}
