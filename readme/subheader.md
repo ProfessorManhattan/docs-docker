@@ -25,7 +25,7 @@
     <img alt="GitLab pipeline status" src="https://gitlab.com/megabyte-labs/dockerfile/{{ subgroup }}/{{ slug }}/badges/master/pipeline.svg" />
   </a>
   <a href="{{ repository.group.dockerfile }}/{{ subgroup }}/{{ slug }}/-/raw/master/LICENSE" target="_blank">
-    <img alt="License: {{ license }}" src="https://img.shields.io/github/license/MegabyteLabs/docker-{{ slug }}?color=yellow&style={{ badge_style }}" />
+    <img alt="License: {{ license }}" src="https://img.shields.io/badge/License-{{ license }}-yellow.svg" />
   </a>
   <a href="https://github.com/{{ profile.github }}" target="_blank">
     <img alt="GitHub: {{ profile.github }}" src="https://img.shields.io/github/followers/MegabyteLabs?style=social" target="_blank" />
