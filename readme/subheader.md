@@ -13,19 +13,19 @@
 </h4>
 <p>
   <a href="{{ repository.group.dockerfile }}/{{ subgroup }}/{{ slug }}">
-    <img alt="Version" src="https://img.shields.io/docker/v/megabytelabs/{{ slug }}?logo=docker&logoColor=white&style=for-the-badge" />
+    <img alt="Version" src="https://img.shields.io/docker/v/megabytelabs/{{ slug }}?logo=docker&logoColor=white&style={{ badge_style }}" />
   </a>
   <a href="https://hub.docker.com/repository/docker/megabytelabs/{{ slug }}">
-    <img alt="DockerHub image size: {{ pretty_name }}" src="https://img.shields.io/docker/image-size/megabytelabs/{{ slug }}?logo=docker&logoColor=white&style=for-the-badge">
+    <img alt="DockerHub image size: {{ pretty_name }}" src="https://img.shields.io/docker/image-size/megabytelabs/{{ slug }}?logo=docker&logoColor=white&style={{ badge_style }}">
   </a>
   <a href="https://hub.docker.com/repository/docker/megabytelabs/{{ slug }}" target="_blank">
-    <img alt="DockerHub pulls: {{ pretty_name }}" src="https://img.shields.io/docker/pulls/megabytelabs/{{ slug }}?logo=docker&logoColor=white&style=for-the-badge" />
+    <img alt="DockerHub pulls: {{ pretty_name }}" src="https://img.shields.io/docker/pulls/megabytelabs/{{ slug }}?logo=docker&logoColor=white&style={{ badge_style }}" />
   </a>
-  <a href="" target="_blank">
-    <img alt="GitLab pipeline status" src="https://img.shields.io/gitlab/pipeline/megabyte-labs/dockerfile%2Fci-pipeline%2Fansible-lint/master?style=for-the-badge" />
+  <a href="{{ repository.group.dockerfile }}/{{ subgroup }}/{{ slug }}" target="_blank">
+    <img alt="GitLab pipeline status" src="https://gitlab.com/megabyte-labs/dockerfile/{{ subgroup }}/{{ slug }}/badges/master/pipeline.svg" />
   </a>
   <a href="{{ repository.group.dockerfile }}/{{ subgroup }}/{{ slug }}/-/raw/master/LICENSE" target="_blank">
-    <img alt="License: {{ license }}" src="https://img.shields.io/github/license/MegabyteLabs/docker-{{ slug }}?color=yellow&style=for-the-badge" />
+    <img alt="License: {{ license }}" src="https://img.shields.io/github/license/MegabyteLabs/docker-{{ slug }}?color=yellow&style={{ badge_style }}" />
   </a>
   <a href="https://github.com/{{ profile.github }}" target="_blank">
     <img alt="GitHub: {{ profile.github }}" src="https://img.shields.io/github/followers/MegabyteLabs?style=social" target="_blank" />
