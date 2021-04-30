@@ -21,6 +21,9 @@
   <a href="https://hub.docker.com/repository/docker/megabytelabs/{{ slug }}" target="_blank">
     <img alt="DockerHub pulls: {{ pretty_name }}" src="https://img.shields.io/docker/pulls/megabytelabs/{{ slug }}?logo=docker&logoColor=white&style=for-the-badge" />
   </a>
+  <a href="">
+    <img alt="GitLab pipeline status" src="https://img.shields.io/gitlab/pipeline/megabyte-labs/dockerfile/ci-pipeline/ansible-lint/master?style=for-the-badge" />
+  </a>
   <a href="{{ repository.group.dockerfile }}/{{ subgroup }}/{{ slug }}/-/raw/master/LICENSE" target="_blank">
     <img alt="License: {{ license }}" src="https://img.shields.io/github/license/MegabyteLabs/docker-{{ slug }}?color=yellow&style=for-the-badge" />
   </a>
