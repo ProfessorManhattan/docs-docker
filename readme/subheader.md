@@ -13,13 +13,19 @@
 </h4>
 <p>
   <a href="{{ repository.group.dockerfile }}/{{ subgroup }}/{{ slug }}">
-    <img alt="Version" src="https://img.shields.io/badge/version-{{ pkg.version }}-blue.svg?cacheSeconds=2592000" />
+    <img alt="Version" src="https://img.shields.io/docker/v/megabytelabs/{{ slug }}?logo=docker&logoColor=white&style=for-the-badge" />
   </a>
-  <a href="{{ website.documentation }}/docker" target="_blank">
-    <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
+  <a href="https://hub.docker.com/repository/docker/megabytelabs/{{ slug }}">
+    <img alt="DockerHub image size: {{ pretty_name }}" src="https://img.shields.io/docker/image-size/megabytelabs/{{ slug }}?logo=docker&logoColor=white&style=for-the-badge">
+  </a>
+  <a href="https://hub.docker.com/repository/docker/megabytelabs/{{ slug }}" target="_blank">
+    <img alt="DockerHub pulls: {{ pretty_name }}" src="https://img.shields.io/docker/pulls/megabytelabs/{{ slug }}?logo=docker&logoColor=white&style=for-the-badge" />
   </a>
   <a href="{{ repository.group.dockerfile }}/{{ subgroup }}/{{ slug }}/-/raw/master/LICENSE" target="_blank">
-    <img alt="License: {{ license }}" src="https://img.shields.io/badge/License-{{ license }}-yellow.svg" />
+    <img alt="License: {{ license }}" src="https://img.shields.io/github/license/MegabyteLabs/docker-{{ slug }}?color=yellow&style=for-the-badge" />
+  </a>
+  <a href="https://github.com/{{ profile.github }}" target="_blank">
+    <img alt="GitHub: {{ profile.github }}" src="https://img.shields.io/github/followers/MegabyteLabs?style=social" target="_blank" />
   </a>
   <a href="https://twitter.com/{{ profile.twitter }}" target="_blank">
     <img alt="Twitter: {{ profile.twitter }}" src="https://img.shields.io/twitter/follow/{{ profile.twitter }}.svg?style=social" />
