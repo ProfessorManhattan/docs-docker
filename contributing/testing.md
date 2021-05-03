@@ -33,7 +33,7 @@ It is especially important to test DockerSlim builds. DockerSlim works by removi
 
 For example, if you are testing a DockerSlim build that packages [ansible-lint]({{ repository.project.ansiblelint }}) into a slim container, you might be tempted to simply test it by running `docker exec -it MySlimAnsibleLint ansible-lint`. This will ensure that the ansible-lint command can be accessed but that is not enough. You should also test it by passing in files as a volume and command line arguments. You can see an [example of this in the Ansible Lint repository]({{ repository.project.ansiblelint }}). 
 
-It is **important** to test all common use cases. Some people might be using the `ansible-lint` container in CI where the files are injected into the Docker container and some people might be using an inline command to directly access anible-lint from the host.
+It is **important** to test all common use cases. Some people might be using the `ansible-lint` container in CI where the files are injected into the Docker container and some people might be using an inline command to directly access ansible-lint from the host.
 
 ### Testing Web Apps
 
