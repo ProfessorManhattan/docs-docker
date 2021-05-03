@@ -69,6 +69,8 @@ The `.blueprint.json` file stores some of the information required to automatica
 
 {{ blueprint_variables }}
 
+When populating the `.blueprint.json` file, it is a good idea to check out [repositories in the same group]({{ repository.group.dockerfile }}/{{ subgroup }}) to see what variables are being utilized.
+
 ## Creating a New Dockerfile Project
 
 If you are creating a new Dockerfile project, you should first populate the `.blueprint.json` file as described above. After you have a `.blueprint.json` in the root of the project, you should also copy the `.start.sh` file from another one of our Dockerfile projects. With the files in place, you can then run `bash .start.sh`. This will copy over all the other files and set up the project. You should then:
