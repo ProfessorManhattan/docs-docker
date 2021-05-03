@@ -12,17 +12,17 @@
     "company_name": "Megabyte LLC",
     "blueprint_variables": [
         ["Variable", "Description"],
-        ["badge_style", "Badge style to use from shields.io when generating the documentation." ],
-        ["description_template", "Only necessary for for projects injecting size information into the description in `package.json` (e.g. the text that says \"Only 5.37 MB!\"). When you add the text `IMAGE_SIZE_PLACEHOLDER` to this variable, it will be replaced with container size information." ],
-        ["docker_command", "The command that you would normally run when using the tool. For Ansible Lint this command would just be `ansible-lint`. However, for YAML Lint this command would be `yamllint .` (notice how a period comes after the command)."],
-        ["docker_command_alias", "Used for generating the documentation for running the Docker container via a bash alias. This variable is the function name. For YAML Lint, this would be `yamllint` (notice how the period is removed when comparing to the above command since `yamllint .` cannot be a function name)."],
-        ["dockerhub_description", "The short description of the project. This is shown on DockerHub and has a limit of 100 characters."],
-        ["dockerslim_command", "The arguments passed to DockerSlim when generating a slim build. **Any \\ included in this string must be added as \\\\\\**."],
-        ["preferred_tag", "In general, this should either be `latest` or `slim`. This is the tag that is used to generate the parts of the documentation that refer to specific Docker image tags."]
-        ["pretty_name", "The full (pretty) name of the tool (used for generating documentation)."],
-        ["project_title", "The title of the project - this controls the title of the README.md and will generally be the same as the `pretty_name`."],
-        ["slug", "The slug is found by looking at the URL of the repository (e.g. for Ansible Lint, the slug would be `ansible-lint` since the last part of [this URL](https://gitlab.com/megabyte-labs/dockerfile/ci-pipeline/ansible-lint) is ansible-lint)."],
-        ["subgroup", "The subgroup is found by looking at the second to last part of the URL of the repository (e.g. for Ansible Lint the subgroup would be `ci-pipeline`)."]
+        ["`badge_style`", "Badge style to use from shields.io when generating the documentation." ],
+        ["`description_template`", "Only necessary for for projects injecting size information into the description in `package.json` (e.g. the text that says \"Only 5.37 MB!\"). When you add the text `IMAGE_SIZE_PLACEHOLDER` to this variable, it will be replaced with container size information." ],
+        ["`docker_command`", "The command that you would normally run when using the tool. For Ansible Lint this command would just be `ansible-lint`. However, for YAML Lint this command would be `yamllint .` (notice how a period comes after the command)."],
+        ["`docker_command_alias`", "Used for generating the documentation for running the Docker container via a bash alias. This variable is the function name. For YAML Lint, this would be `yamllint` (notice how the period is removed when comparing to the above command since `yamllint .` cannot be a function name)."],
+        ["`dockerhub_description`", "The short description of the project. This is shown on DockerHub and has a limit of 100 characters."],
+        ["`dockerslim_command`", "The arguments passed to DockerSlim when generating a slim build. **Any \\ included in this string must be added as \\\\\\**."],
+        ["`preferred_tag`", "In general, this should either be `latest` or `slim`. This is the tag that is used to generate the parts of the documentation that refer to specific Docker image tags."],
+        ["`pretty_name`", "The full (pretty) name of the tool (used for generating documentation)."],
+        ["`project_title`", "The title of the project - this controls the title of the README.md and will generally be the same as the `pretty_name`."],
+        ["`slug`", "The slug is found by looking at the URL of the repository (e.g. for Ansible Lint, the slug would be `ansible-lint` since the last part of [this URL](https://gitlab.com/megabyte-labs/dockerfile/ci-pipeline/ansible-lint) is ansible-lint)."],
+        ["`subgroup`", "The subgroup is found by looking at the second to last part of the URL of the repository (e.g. for Ansible Lint the subgroup would be `ci-pipeline`)."]
     ],
     "profile": {
         "dockerhub": "https://hub.docker.com/u/megabytelabs",
