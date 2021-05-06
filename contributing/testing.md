@@ -37,4 +37,4 @@ It is **important** to test all common use cases. Some people might be using the
 
 ### Testing Web Apps
 
-When testing Docker-based web applications, ensure that after you destroy the container you can bring the Docker container back up to its previous state using volumes and file mounts. This allows users to periodically update the Docker container while having their settings persist.
+When testing Docker-based web applications, ensure that after you destroy the container you can bring the Docker container back up to its previous state using volumes and file mounts. This allows users to periodically update the Docker container while having their settings persist. This requirement is also for disaster recovery.
