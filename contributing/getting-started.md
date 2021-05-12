@@ -63,6 +63,70 @@ You can then build the Docker image, for instance, by running `npm run build` or
 
 Whenever possible, a DockerSlim build should be provided and tagged as `:slim`. DockerSlim provides many configuration options so please check out the [DockerSlim documentation]({{ website.dockerslim_github_page }}) to get a thorough understanding of it and what it is capable of. When you have formulated *and fully tested* the proper DockerSlim configuration, you can add it to the `.blueprint.json` file.
 
+#### How to Determine Which Paths to Include
+
+In most cases, the DockerSlim configuration in `.blueprint.json` (which gets injected into `package.json`) will require the use of `--include-path`. If you were creating a slim build that included `jq`, for instance, then you would need to instruct DockerSlim to hold onto the `jq` binary. You can determine where the binary is stored on the target machine by running:
+
+```bash
+npm run shell
+which jq
+```
+
+You would then need to include the path that the command above displays in the `dockerslim_command` key of `.blueprint.json`. The `.blueprint.json` might look something like this:
+
+```json
+{
+  ...
+  "dockerslim_command": "--http-probe=false --exec 'npm install' --include-path '/usr/bin/jq'"
+}
+```
+
+#### Determining Binary Dependencies
+
+If you tried to use the `"dockerslim_command"` above, you might notice that it is incomplete. That is because `jq` relies on some libraries that are not bundled into the executable. You can determine the libraries you need to include by using the `ldd` command like this:
+
+```bash
+npm run shell
+ldd $(which jq)
+```
+
+The command above would output something like this:
+
+```shell
+	/lib/ld-musl-x86_64.so.1 (0x7fa35376c000)
+	libonig.so.5 => /usr/lib/libonig.so.5 (0x7fa35369e000)
+	libc.musl-x86_64.so.1 => /lib/ld-musl-x86_64.so.1 (0x7fa35376c000)
+```
+
+Using the information above, you can see two unique libraries being used. You should then check out the slim build to see which of the two libraries is missing. This can be done by running:
+
+```bash
+echo "***Base image libraries for jq***"
+npm run shell
+cd /usr/lib
+ls | grep libonig.so.5
+cd /lib
+ls | grep ld-musl-x86_64.so.1
+exit
+echo "***Slim image libraries for jq***"
+npm run shell:slim
+cd /usr/lib
+ls | grep libonig.so.5
+cd /lib
+ls | grep ld-musl-x86_64.so.1
+exit
+```
+
+You should then compare the output from the base image with the slim image. After you compare the two, in this case, you will see that the slim build is missing `/usr/lib/libonig.so.5` and `/usr/lib/libonig.so.5.1.0`. So, finally, you can complete the necessary configuration in `.blueprint.json` by including the paths to the missing libraries:
+
+```json
+{
+  ...
+  "dockerslim_command": "--http-probe=false --exec 'npm install' --include-path '/usr/bin/jq' --include-path '/usr/lib/libonig.so.5' --include-path '/usr/lib/libonig.so.5.1.0'"
+}
+```
+
+
 ### Updating the `.blueprint.json` File
 
 The `.blueprint.json` file stores some of the information required to automatically generate, scaffold, and update this repository when `bash .start.sh` is run. When creating a new Dockerfile project, the `.blueprint.json` file must be filled out. The following chart details the possible data that you can populate `.blueprint.json` with:
