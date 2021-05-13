@@ -1,15 +1,25 @@
 <h4>
-  <a href="{{ website.homepage }}">Homepage</a>
-  <span> | </span>
-  <a href="{{ profile.dockerhub }}">DockerHub Profile</a>
-  <span> | </span>
-  <a href="{{ website.dockerhub_repository }}/{{ slug }}">DockerHub Image</a>
-  <span> | </span>
-  <a href="{{ repository.group.dockerfile }}/{{ subgroup }}/{{ slug }}/-/blob/master/CONTRIBUTING.md">Contributing</a>
-  <span> | </span>
-  <a href="{{ chat_url }}">Chat</a>
-  <span> | </span>
-  <a href="{{ profile.github }}/docker-{{ slug }}">GitHub Mirror</a>
+  <a href="{{ website.homepage }}" title="Megabyte Labs homepage">
+    <img src="https://gitlab.com/megabyte-labs/assets/-/raw/master/svg/home.svg" />
+  </a>
+  <a href="{{ profile.dockerhub }}" title="Megabyte Labs profile on DockerHub">
+    <img src="https://gitlab.com/megabyte-labs/assets/-/raw/master/svg/dockerhub-profile.svg" />
+  </a>
+  <a href="{{ website.dockerhub_repository }}/{{ slug }}" title="DockerHub page for this project">
+    <img src="https://gitlab.com/megabyte-labs/assets/-/raw/master/svg/dockerhub-image.svg" />
+  </a>
+  <a href="{{ repository.group.dockerfile }}/{{ subgroup }}/{{ slug }}/-/blob/master/CONTRIBUTING.md" title="Find out how to contribute to this project">
+    <img src="https://gitlab.com/megabyte-labs/assets/-/raw/master/svg/contribute.svg" />
+  </a>
+  <a href="{{ chat_url }}" title="Slack chat room">
+    <img src="https://gitlab.com/megabyte-labs/assets/-/raw/master/svg/chat.svg" />
+  </a>
+  <a href="{{ repository.group.dockerfile }}/{{ subgroup }}/{{ slug }}" title="GitLab repository">
+    <img src="https://gitlab.com/megabyte-labs/assets/-/raw/master/svg/github.svg" />
+  </a>
+  <a href="{{ profile.github }}/docker-{{ slug }}" title="GitHub mirror">
+    <img src="https://gitlab.com/megabyte-labs/assets/-/raw/master/svg/gitlab.svg" />
+  </a>
 </h4>
 <p>
   <a href="{{ repository.group.dockerfile }}/{{ subgroup }}/{{ slug }}">
