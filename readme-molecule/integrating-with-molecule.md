@@ -1,6 +1,6 @@
 ### Integrating with Ansible Molecule
 
-If you are using this image for testing [Ansible roles]({{ repository.group.ansible_roles }}) using [Ansible Molecule]({{ website.ansible_molecule_docs }}), then you will have to incorporate the image into your `molecule.yml` file (as well as have the appropriate folder structure in your custom role). A great example is in the repository of our [Android Studio Ansible role]({{ repository.project.androidstudio }}). In that role's root directory, you will see a folder named `molecule` alongside a properly structured Ansible role. In that folder, you will see a folder named `docker`. This folder defines the `docker` Molecule scenario. In the `molecule/docker` folder, you will see a file called `molecule.yml` which is where you will see a reference to this repository's Docker Hub slug (i.e. `megabytelabs/{{ pkg.name }}`). Once you have everything setup like it is in our Android Studio role, you can run `molecule test -s docker` to run the tests.
+If you are using this image for testing [Ansible roles]({{ repository.group.ansible_roles }}) using [Ansible Molecule]({{ website.ansible_molecule_docs }}), then you will have to incorporate the image into your `molecule.yml` file (as well as have the appropriate folder structure in your custom role). A great example is in the repository of our [Android Studio Ansible role]({{ repository.project.androidstudio }}). In that role's root directory, you will see a folder named `molecule` alongside a properly structured Ansible role. In that folder, you will see a folder named `docker`. This folder defines the `docker` Molecule scenario. In the `molecule/docker` folder, you will see a file called `molecule.yml` which is where you will see a reference to this repository's Docker Hub slug (i.e. `megabytelabs/{{ slug }}`). Once you have everything setup like it is in our Android Studio role, you can run `molecule test -s docker` to run the tests.
 
 At the minimum, your `molecule/docker/molecule.yml` should look something like this:
 
@@ -15,7 +15,7 @@ driver:
   name: docker
 platforms:
   - name: MyMoleculePlatform
-    image: megabytelabs/{{ pkg.name }}:latest
+    image: megabytelabs/{{ slug }}:latest
     command: ""
     tmpfs:
       - /run

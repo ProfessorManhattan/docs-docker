@@ -3,7 +3,7 @@
 There are several different ways you can use the Docker container provided by this project. For starters, you can test the feature out locally by running:
 
 ```shell
-docker run -v ${PWD}:/work -w /work megabytelabs/{{ pkg.name }}:{{ preferred_tag }} {{ docker_command }}
+docker run -v ${PWD}:/work -w /work megabytelabs/{{ slug }}:{{ preferred_tag }} {{ docker_command }}
 ```
 
 This allows you to run {{ pretty_name }} without installing it locally. This could be good for security since the application is within a container and also keeps your file system clean.
@@ -12,7 +12,7 @@ You can also add a bash alias to your `~/.bashrc` file so that you can run the {
 
 ```shell
 {{ docker_command_alias }}() {
-    docker run -v ${PWD}:/work -w /work megabytelabs/{{ pkg.name }}:{{ preferred_tag }} {{ docker_command }}
+    docker run -v ${PWD}:/work -w /work megabytelabs/{{ slug }}:{{ preferred_tag }} {{ docker_command }}
 }
 ```
 

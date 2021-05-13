@@ -3,13 +3,13 @@
   <span> | </span>
   <a href="{{ profile.dockerhub }}">DockerHub Profile</a>
   <span> | </span>
-  <a href="{{ website.dockerhub_repository }}/{{ pkg.name }}">DockerHub Image</a>
+  <a href="{{ website.dockerhub_repository }}/{{ slug }}">DockerHub Image</a>
   <span> | </span>
   <a href="{{ repository.group.dockerfile }}/{{ subgroup }}/{{ slug }}/-/blob/master/CONTRIBUTING.md">Contributing</a>
   <span> | </span>
   <a href="{{ chat_url }}">Chat</a>
   <span> | </span>
-  <a href="{{ profile.github }}/docker-{{ pkg.name }}">GitHub Mirror</a>
+  <a href="{{ profile.github }}/docker-{{ slug }}">GitHub Mirror</a>
 </h4>
 <p>
   <a href="{{ repository.group.dockerfile }}/{{ subgroup }}/{{ slug }}">
