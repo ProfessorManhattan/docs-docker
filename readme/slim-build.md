@@ -9,7 +9,7 @@ To build and publish a slim Dockerfile to Docker Hub, you can use the following 
 ```shell
 docker login -u "DOCKERHUB_USERNAME" -p "DOCKERHUB_PASSWORD" docker.io
 docker build -t "DOCKERHUB_USERNAME/{{ slug }}:latest" .
-DOCKER_SLIM_BUILD_COMMAND
+docker-slim build --tag DOCKERHUB_USERNAME/{{ slug }}:slim DOCKER_SLIM_BUILD_COMMAND DOCKERHUB_USERNAME/{{ slug }}:latest
 docker push "DOCKERHUB_USERNAME/{{ slug }}:slim"
 ```
 
