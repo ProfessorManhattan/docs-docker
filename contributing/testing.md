@@ -25,6 +25,8 @@ else
 fi
 ```
 
+**Note: The test.sh file is now created from a template. To make sure it gets generated, you should create the `test/` folder in the root of the project and then run `bash .start.sh`. The template version of `test.sh` will recursively loop through all of the folders inside the `test/` folder unlike the example above which only tests the `test/example/` scenario.**
+
 The above script, combined with some dummy data in `test/example/`, will properly validate that the slim build is working the same way the regular build is working. If no `test/` folder exists in the root of the repository, then the test step will be removed from `package.json`. We prefer you create a test that validates that the container is working whenever possible but in some cases it might not be necessary especially when there is no slim version. For a full example of implementing a test, please see the [Ansible Lint repository]({{ repository.project.ansiblelint }}).
 
 ### Testing DockerSlim Builds

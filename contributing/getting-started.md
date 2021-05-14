@@ -126,6 +126,16 @@ You should then compare the output from the base image with the slim image. Afte
 }
 ```
 
+### Using a `paths.txt` File
+
+In the above example, we use `--include-path` to specify each file we want to include in the optimized Docker image. If you are ever including more than a couple includes, you should instead create a line return seperated list of paths to preserve in a file named `paths.txt`. You can then include the paths in the `"dockerslim_command"` by using utilizing `--preserve-path-file`. The `"dockerslim_command"` above would then look like this if you create the `paths.txt` file:
+
+```json
+{
+  ...
+  "dockerslim_command": "--http-probe=false --exec 'npm install' --preserve-path-file 'paths.txt'"
+}
+```
 
 ### Updating the `.blueprint.json` File
 
