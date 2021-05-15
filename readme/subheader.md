@@ -14,10 +14,10 @@
   <a href="{{ chat_url }}" title="Slack chat room">
     <img src="https://gitlab.com/megabyte-labs/assets/-/raw/master/svg/chat.svg" />
   </a>
-  <a href="{{ repository.group.dockerfile }}/{{ subgroup }}/{{ slug }}" title="GitLab repository">
+  <a href="{{ profile.github }}/docker-{{ slug }}" title="GitHub mirror">
     <img src="https://gitlab.com/megabyte-labs/assets/-/raw/master/svg/github.svg" />
   </a>
-  <a href="{{ profile.github }}/docker-{{ slug }}" title="GitHub mirror">
+  <a href="{{ repository.group.dockerfile }}/{{ subgroup }}/{{ slug }}" title="GitLab repository">
     <img src="https://gitlab.com/megabyte-labs/assets/-/raw/master/svg/gitlab.svg" />
   </a>
 </h4>
