@@ -32,12 +32,12 @@
     <img alt="DockerHub pulls: {{ pretty_name }}" src="https://img.shields.io/docker/pulls/megabytelabs/{{ slug }}?logo=docker&logoColor=white&style={{ badge_style }}" />
   </a>
   <a href="{{ repository.group.dockerfile }}/{{ subgroup }}/{{ slug }}" target="_blank">
-    <img alt="GitLab pipeline status" src="https://gitlab.com/megabyte-labs/dockerfile/{{ subgroup }}/{{ slug }}/badges/master/pipeline.svg" />
+    <img alt="GitLab pipeline status" src="https://gitlab.com/megabyte-labs/dockerfile/{{ subgroup }}/{{ slug }}/badges/master/pipeline.svg?style={{ badge_style }}" />
   </a>
   <a href="{{ repository.group.dockerfile }}/{{ subgroup }}/{{ slug }}/-/raw/master/LICENSE" target="_blank">
-    <img alt="License: {{ license }}" src="https://img.shields.io/badge/License-{{ license }}-yellow.svg" />
+    <img alt="License: {{ license }}" src="https://img.shields.io/badge/License-{{ license }}-yellow.svg?style={{ badge_style }}" />
   </a>
-  <a href="https://github.com/{{ profile.github }}" target="_blank">
+  <a href="{{ profile.github }}" target="_blank">
     <img alt="GitHub: {{ profile.github }}" src="https://img.shields.io/github/followers/MegabyteLabs?style=social" target="_blank" />
   </a>
   <a href="https://twitter.com/{{ profile.twitter }}" target="_blank">

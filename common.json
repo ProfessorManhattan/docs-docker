@@ -3,6 +3,7 @@
         "patreon_image": "https://c5.patreon.com/external/logo/become_a_patron_button@2x.png"
     },
     "author_fullname": "Brian Zalewski",
+    "badge_style": "flat",
     "chat_url": "https://app.slack.com/client/T01ABCG4NK1/C01NN74H0LW/details/",
     "checkLinks": false,
     "contact_email": "help@megabyte.space",
