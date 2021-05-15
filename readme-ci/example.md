@@ -12,7 +12,7 @@ You can also add a bash alias to your `~/.bashrc` file so that you can run the {
 
 ```shell
 {{ docker_command_alias }}() {
-    docker run -v ${PWD}:/work -w /work megabytelabs/{{ slug }}:{{ preferred_tag }} {{ docker_command }}
+    docker run -v ${PWD}:/work -w /work megabytelabs/{{ slug }}:{{ preferred_tag }} "$@"
 }
 ```
 
