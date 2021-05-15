@@ -41,6 +41,6 @@
     <img alt="GitHub: {{ profile.github }}" src="https://img.shields.io/github/followers/MegabyteLabs?style=social" target="_blank" />
   </a>
   <a href="https://twitter.com/{{ profile.twitter }}" target="_blank">
-    <img alt="Twitter: {{ profile.twitter }}" src="https://img.shields.io/twitter/follow/{{ profile.twitter }}.svg?style=social" />
+    <img alt="Twitter: {{ profile.twitter }}" src="https://img.shields.io/twitter/url/https/twitter.com/fold_left.svg?style=social&label=Follow%20%40{{ profile.twitter }}" />
   </a>
 </p>
