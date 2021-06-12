@@ -16,7 +16,7 @@ driver:
 platforms:
   - name: MyMoleculePlatform
     image: megabytelabs/{{ slug }}:latest
-    command: ""
+    command: ''
     tmpfs:
       - /run
       - /tmp
