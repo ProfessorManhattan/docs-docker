@@ -1,11 +1,11 @@
 # Dockerfile Documentation
 
-This repository contains documentation partials written in Markdown used for generating the documentation for our various Dockerfile repositories.
+This repository contains documentation partials written in Markdown. The partials are used for generating the documentation for our various [Dockerfile repositories](https://gitlab.com/megabyte-labs/dockerfile).
 
-You can rebuild the documentation by running the following command in the parent repository's root folder:
+You can rebuild the documentation by running the following command in one of our Dockerfile repositories:
 
 ```shell
 bash .start.sh
 ```
 
-Whenever master is updated in this repository, GitLab CI will propagate the changes to all the relevant projects. This is done by setting an environment variable named DOWNSTREAM_GROUP_IDS equal to a comma seperated list of subgroups with projects that should all be updated.
+Changes made to this repository will automatically propagate to our Dockerfile projects via GitLab CI.
