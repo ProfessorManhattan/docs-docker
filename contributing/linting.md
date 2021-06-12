@@ -4,7 +4,7 @@ We utilize several different linters to ensure that all our Dockerfile projects 
 
 We also incorporate other linters that are run automatically whenever you commit code (assuming you have run `npm i` in the root of the project). These linters include:
 
-* [Prettier]({{ repository.project.prettier }})
-* [Shellcheck]({{ repository.project.shellcheck }})
+- [Prettier]({{ repository.project.prettier }})
+- [Shellcheck]({{ repository.project.shellcheck }})
 
 Some of the linters are also baked into the CI pipeline. The pipeline will trigger whenever you post a commit to a branch. All of these pipeline tasks must pass in order for merge requests to be accepted. You can check the status of recently triggered pipelines for this project by going to the [CI/CD pipeline page]({{ repository.group.dockerfile }}/{{ subgroup }}/{{ slug }}/-/pipelines).

@@ -8,12 +8,12 @@ bash .start.sh
 
 This command will:
 
-* Install missing dependencies without sudo (i.e. the binary dependencies will be stored in `~/.local/bin` and your PATH will be updated to reference the `~/.local/bin` directory)
-* Ensure Node.js dependencies are installed if the `node_modules/` folder is missing
-* Copy (and possibly overwrite) the shared common files from the [Dockerfile common files repository]({{ repository.project.common_docker }}) and the [shared common files repository]({{ repository.project.common_shared }})
-* Update the `package.json` file
-* Re-generate the documentation
-* Register a pre-commit hook that only allows commits to register if tests are passed
+- Install missing dependencies without sudo (i.e. the binary dependencies will be stored in `~/.local/bin` and your PATH will be updated to reference the `~/.local/bin` directory)
+- Ensure Node.js dependencies are installed if the `node_modules/` folder is missing
+- Copy (and possibly overwrite) the shared common files from the [Dockerfile common files repository]({{ repository.project.common_docker }}) and the [shared common files repository]({{ repository.project.common_shared }})
+- Update the `package.json` file
+- Re-generate the documentation
+- Register a pre-commit hook that only allows commits to register if tests are passed
 
 ### Descriptions of Build Scripts
 
@@ -61,7 +61,7 @@ You can then build the Docker image, for instance, by running `npm run build` or
 
 ### Creating DockerSlim Builds
 
-Whenever possible, a DockerSlim build should be provided and tagged as `:slim`. DockerSlim provides many configuration options so please check out the [DockerSlim documentation]({{ website.dockerslim_github_page }}) to get a thorough understanding of it and what it is capable of. When you have formulated *and fully tested* the proper DockerSlim configuration, you can add it to the `.blueprint.json` file.
+Whenever possible, a DockerSlim build should be provided and tagged as `:slim`. DockerSlim provides many configuration options so please check out the [DockerSlim documentation]({{ website.dockerslim_github_page }}) to get a thorough understanding of it and what it is capable of. When you have formulated _and fully tested_ the proper DockerSlim configuration, you can add it to the `.blueprint.json` file.
 
 #### How to Determine Which Paths to Include
 

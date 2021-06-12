@@ -16,7 +16,7 @@ You can also add a bash alias to your `~/.bashrc` file so that you can run the {
 }
 ```
 
-*Note: Some CLI tools run without any arguments passed in. For example, the CLI tool `ansible-lint` runs by simply entering `ansible-lint` in the terminal. Our Docker images default command is to show the version so to get around this quirk you would run `ansible-lint .`.*
+_Note: Some CLI tools run without any arguments passed in. For example, the CLI tool `ansible-lint` runs by simply entering `ansible-lint` in the terminal. Our Docker images default command is to show the version so to get around this quirk you would run `ansible-lint .`._
 
 ### Integrating with GitLab CI
 
