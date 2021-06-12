@@ -1,6 +1,6 @@
 ---
 stages:
-  - format
+  - lint
   - deploy
 
 include:
