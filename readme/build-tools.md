@@ -5,15 +5,13 @@ You might notice that we have a lot of extra files considering that this reposit
 ```shell
 ❯ npm run info
 
-> ansible-lint@0.0.23 info
+> @megabytelabs/docker-ansible-molecule-ubuntu-21.04@0.0.1 info
 > npm-scripts-info
 
 build:
-  Build the regular Docker image and then build the slim image
+  Build the regular Docker image and then build the slim image (if the project supports it)
 build:latest:
   Build the regular Docker image
-build:slim:
-  Build a compact Docker image with DockerSlim
 commit:
   The preferred way of running git commit (instead of git commit, we prefer you run 'npm run commit' in the root of this repository)
 fix:
