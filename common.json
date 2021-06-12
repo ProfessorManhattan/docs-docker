@@ -54,6 +54,10 @@
       "The slug is found by looking at the URL of the repository (e.g. for Ansible Lint, the slug would be `ansible-lint` since the last part of [this URL](https://gitlab.com/megabyte-labs/dockerfile/ci-pipeline/ansible-lint) is ansible-lint)."
     ],
     [
+      "`slug_full`",
+      "This variable is populated by `.start.sh` by combining the `subgroup` and `slug` variables."
+    ],
+    [
       "`subgroup`",
       "The subgroup is found by looking at the second to last part of the URL of the repository (e.g. for Ansible Lint the subgroup would be `ci-pipeline`)."
     ]
