@@ -26,25 +26,35 @@
     </a>
   </h4>
   <p align="center">
-  <a href="{{ repository.group.dockerfile }}/{{ subgroup }}/{{ slug }}">
-    <img alt="Version" src="https://img.shields.io/docker/v/megabytelabs/{{ slug }}?logo=docker&logoColor=white&style={{ badge_style }}" />
-  </a>
-  <a href="https://hub.docker.com/repository/docker/megabytelabs/{{ slug }}">
-    <img alt="DockerHub image size: {{ pretty_name }}" src="https://img.shields.io/docker/image-size/megabytelabs/{{ slug }}?logo=docker&logoColor=white&style={{ badge_style }}">
-  </a>
-  <a href="https://hub.docker.com/repository/docker/megabytelabs/{{ slug }}" target="_blank">
-    <img alt="DockerHub pulls: {{ pretty_name }}" src="https://img.shields.io/docker/pulls/megabytelabs/{{ slug }}?logo=docker&logoColor=white&style={{ badge_style }}" />
-  </a>
-  <a href="{{ repository.group.dockerfile }}/{{ subgroup }}/{{ slug }}" target="_blank">
-    <img alt="GitLab pipeline status" src="https://gitlab.com/megabyte-labs/dockerfile/{{ subgroup }}/{{ slug }}/badges/master/pipeline.svg?style={{ badge_style }}" />
-  </a>
-  <a href="{{ repository.group.dockerfile }}/{{ subgroup }}/{{ slug }}/-/raw/master/LICENSE" target="_blank">
-    <img alt="License: {{ license }}" src="https://img.shields.io/badge/License-{{ license }}-yellow.svg?style={{ badge_style }}" />
-  </a>
-  <a href="{{ profile.github }}" target="_blank">
-    <img alt="GitHub: {{ profile.github }}" src="https://img.shields.io/github/followers/ProfessorManhattan?style=social" target="_blank" />
-  </a>
-  <a href="https://twitter.com/{{ profile.twitter }}" target="_blank">
-    <img alt="Twitter: {{ profile.twitter }}" src="https://img.shields.io/twitter/url/https/twitter.com/{{ profile.twitter }}.svg?style=social&label=Follow%20%40{{ profile.twitter }}" />
-  </a>
-</p>
+    <a href="https://hub.docker.com/repository/docker/megabytelabs/{{ slug_github }}" target="_blank">
+      <img alt="Version" src="https://img.shields.io/docker/v/megabytelabs/{{ slug_github }}?logo=docker&logoColor=white&sort=date&style={{ badge_style }}" />
+    </a>
+    <a href="https://hub.docker.com/repository/docker/megabytelabs/{{ slug_github }}" target="_blank">
+      <img alt="DockerHub image size: {{ pretty_name }}" src="https://img.shields.io/docker/image-size/megabytelabs/{{ slug_github }}?logo=docker&sort=date&logoColor=white&style={{ badge_style }}">
+    </a>
+    <a href="https://hub.docker.com/repository/docker/megabytelabs/{{ slug_github }}" target="_blank">
+      <img alt="DockerHub pulls: {{ pretty_name }}" src="https://img.shields.io/docker/pulls/megabytelabs/{{ slug_github }}?logo=docker&logoColor=white&style={{ badge_style }}" />
+    </a>
+    <a href="https://hub.docker.com/repository/docker/megabytelabs/{{ slug_github }}" target="_blank">
+      <img alt="DockerHub stars: {{ pretty_name }}" src="https://img.shields.io/docker/stars/megabytelabs/{{ slug_github }}?logo=docker&logoColor=white&style={{ badge_style }}" />
+    </a>
+    <a href="{{ repository.group.dockerfile }}/{{ subgroup }}/{{ slug }}/-/commits/master" target="_blank">
+      <img alt="GitLab pipeline status" src="https://gitlab.com/megabyte-labs/dockerfile/{{ subgroup }}/{{ slug }}/badges/master/pipeline.svg?style={{ badge_style }}" />
+    </a>
+    <a href="{{ repository.group.dockerfile }}/{{ subgroup }}/{{ slug }}/-/raw/master/LICENSE" target="_blank">
+      <img alt="License: {{ license }}" src="https://img.shields.io/badge/License-{{ license }}-yellow.svg?style={{ badge_style }}" />
+    </a>
+    <a href="{{ profile.opencollective }}" title="Support us on Open Collective" target="_blank">
+      <img alt="Open Collective sponsors" src="https://img.shields.io/opencollective/sponsors/megabytelabs?logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgBAMAAACBVGfHAAAAElBMVEUAAACvzfmFsft4pfD////w+P9tuc5RAAAABHRSTlMAFBERkdVu1AAAAFxJREFUKM9jgAAXIGBAABYXMHBA4yNEXGBAAU2BMz4FIIYTNhtFgRjZPkagFAuyAhGgHAuKAlQBCBtZB4gzQALoDsN0Oobn0L2PEUCoQYgZyOjRQFiJA67IRrEbAJImNwFBySjCAAAAAElFTkSuQmCC&label=Open%20Collective%20sponsors&logo=opencollective&style={{ badge_style }}" />
+    </a>
+    <a href="{{ profile.github }}" title="Support us on GitHub" target="_blank">
+      <img alt="GitHub sponsors" src="https://img.shields.io/github/sponsors/ProfessorManhattan?label=GitHub%20sponsors&logo=github&style={{ badge_style }}" />
+    </a>
+    <a href="{{ profile.github }}" target="_blank">
+      <img alt="GitHub: ProfessorManhattan" src="https://img.shields.io/github/followers/ProfessorManhattan?style=social" target="_blank" />
+    </a>
+    <a href="https://twitter.com/{{ profile.twitter }}" target="_blank">
+      <img alt="Twitter: {{ profile.twitter }}" src="https://img.shields.io/twitter/url/https/twitter.com/{{ profile.twitter }}.svg?style=social&label=Follow%20%40{{ profile.twitter }}" />
+    </a>
+  </p>
+</div>
