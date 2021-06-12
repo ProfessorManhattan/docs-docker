@@ -10,7 +10,7 @@
       <img src="https://gitlab.com/megabyte-labs/assets/-/raw/master/svg/dockerhub-image-solid.svg" />
     </a>
     <a href="{{ repository.group.dockerfile }}/{{ subgroup }}/{{ slug }}/-/blob/master/CONTRIBUTING.md" title="Learn about contributing" target="_blank">
-      <img src="https://gitlab.com/megabyte-labs/assets/-/raw/master/svg/contribute-solid.svg" />
+      <img src="https://gitlab.com/megabyte-labs/assets/-/raw/master/svg/contributing-solid.svg" />
     </a>
     <a href="{{ profile.patreon }}" title="Support us on Patreon" target="_blank">
       <img src="https://gitlab.com/megabyte-labs/assets/-/raw/master/svg/support-solid.svg" />
