@@ -17,7 +17,7 @@ driver:
   name: docker
 platforms:
   - name: MyMoleculePlatform
-    image: megabytelabs/{{ slug }}:latest
+    image: megabytelabs/{{ slug_full }}:latest
     command: ''
     tmpfs:
       - /run
