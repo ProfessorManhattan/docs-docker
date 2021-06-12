@@ -81,7 +81,7 @@
         "wrangler": "https://gitlab.com/megabyte-labs/wrangler"
     },
     "repository_title": {
-        "playbooks": "ProfessorManhattan's Playbooks"
+        "playbooks": "Install Doctor"
     },
     "website": {
         "ansible_molecule_docs": "https://molecule.readthedocs.io/en/latest/",
