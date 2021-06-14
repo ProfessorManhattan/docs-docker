@@ -7,4 +7,5 @@
 {{ load:.modules/docs/contributing/getting-started.md }}
 {{ load:.modules/docs/contributing/testing.md }}
 {{ load:.modules/docs/contributing/linting.md }}
+{{ load:.modules/docs/contributing/docs.md }}
 {{ load:.modules/docs/contributing/pull-requests.md }}
