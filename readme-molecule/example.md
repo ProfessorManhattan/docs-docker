@@ -18,7 +18,7 @@ docker exec -it megabytelabs/{{ slug }}:latest /bin/bash
 Note that after you exit from the shell session, the container will still be running. After you are done experimenting with the container, you can destroy it by running:
 
 ```shell
-docker ps -a     # Copy the ID of the image you wish to delete
+docker ps -a # Copy the ID of the image you wish to delete
 docker rm ID_FROM_ABOVE_COMMAND_HERE
 ```
 

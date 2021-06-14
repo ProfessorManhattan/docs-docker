@@ -65,7 +65,6 @@ The above configuration defines a custom `converge.yml` file. The `converge.yml`
     ansible_user: ansible
   roles:
     - role: androidstudio
-
 ```
 
 #### Additional Information on Ansible Molecule
