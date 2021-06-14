@@ -1,10 +1,11 @@
 <div align="center">
   <center>
     <a href="{{ repository.group.dockerfile }}/{{ subgroup }}/{{ slug }}">
-      <img width="140" height="140" alt="{{ role_pretty_name }} logo" src="{{ repository.group.dockerfile }}/{{ subgroup }}/{{ slug }}/-/raw/master/logo.png" />
+      <img width="140" height="140" alt="{{ pretty_name }} logo" src="{{ repository.group.dockerfile }}/{{ subgroup }}/{{ slug }}/-/raw/master/logo.png" />
     </a>
   </center>
 </div>
 <div align="center">
-  <center><h1>Dockerfile: {{ project_title }}</h1></center>
+  <center><h1>{{ project_title }} (v{{ pkg.version }})</h1></center>
+  <center><h4 style="color: #18c3d1;">A <a href="https://megabyte.space">Megabyte Labs</a> Dockerfile Project / Latest build includes {{ pretty_name }} v{{ pkg.version }}</h4></center>
 </div>
