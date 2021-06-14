@@ -8,7 +8,7 @@ In the root of all of our repositories, we include a file named `.blueprint.json
 
 For every project that is included in our eco-system, we require certain fields to be filled out in the `.blueprint.json` file. Some of the fields in the file are auto-generated. The fields that need to be filled out as well as descriptions of what they should contain are listed in the chart below:
 
-{{ blueprint_requirements }}
+{{ blueprint_variables }}
 
 ### `logo.png`
 
