@@ -7,10 +7,12 @@ As a convenience feature, we include a command defined in `package.json` that sh
 To build and publish a slim Dockerfile to Docker Hub, you can use the following as a starting point:
 
 ```shell
-docker login -u "DOCKERHUB_USERNAME" -p "DOCKERHUB_PASSWORD" docker.io
-docker build -t "DOCKERHUB_USERNAME/{{ slug }}:latest" .
-docker-slim build --tag DOCKERHUB_USERNAME/{{ slug }}:slim DOCKER_SLIM_BUILD_COMMAND DOCKERHUB_USERNAME/{{ slug }}:latest
-docker push "DOCKERHUB_USERNAME/{{ slug }}:slim"
+export DOCKERHUB_USERNAME=Your_DockerHub_Username_Here
+export DOCKERHUB_PASSWORD=Your_DockerHub_Password_Here
+docker login -u "$DOCKERHUB_USERNAME" -p "$DOCKERHUB_PASSWORD" docker.io
+docker build -t "$DOCKERHUB_USERNAME/{{ slug }}:latest" .
+docker-slim build --tag $DOCKERHUB_USERNAME/{{ slug }}:slim DOCKER_SLIM_BUILD_COMMAND $DOCKERHUB_USERNAME/{{ slug }}:latest
+docker push "$DOCKERHUB_USERNAME/{{ slug }}:slim"
 ```
 
 It may be possible to modify the DockerSlim command above to fix an issue or reduce the footprint even more than our command. You can modify the slim build command inline in the `package.json` file. However, running `bash .start.sh` will overwrite your changes in the `package.json` file. We detail a better way of modifying the `npm run build:slim` configuration in [CONTRIBUTING.md]({{ repository.group.dockerfile }}/{{ subgroup }}/{{ slug }}/-/blob/master/CONTRIBUTING.md).
