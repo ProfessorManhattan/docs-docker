@@ -1,5 +1,5 @@
 {
-"blueprint_variables": [
+  "blueprint_variables": [
     ["Variable", "Description"],
     ["`badge_style`", "Badge style to use from shields.io when generating the documentation"],
     [
