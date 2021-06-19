@@ -1,4 +1,8 @@
 {
+  "author": {
+    "email": "brian@megabyte.space",
+    "name": "Brian Zalewski"
+  },
   "badge_style": "flat",
   "company": "Megabyte LLC",
   "copyright": "2020-2021",
