@@ -61,8 +61,8 @@
   "email": {
     "help": "help@megabyte.space"
   },
-  "github_prefix": "",
-  "group": "generic",
+  "github_prefix": "docker-",
+  "group": "none",
   "hbs": {
     "ansible": false,
     "dockerfile": false,
