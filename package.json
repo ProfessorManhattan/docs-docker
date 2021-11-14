@@ -1,18 +1,18 @@
 {
   "private": false,
-  "name": "@mblabs/docs-angular",
+  "name": "@mblabs/docs-docker",
   "version": "0.0.1",
-  "description": "Documentation partials used to generate documentation for Angular projects",
+  "description": "Documentation partials used to generate documentation for Dockerfile/DockerSlim projects",
   "license": "MIT",
   "author": "Brian Zalewski <brian@megabyte.space> (https://megabyte.space)",
   "homepage": "https://megabyte.space",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ProfessorManhattan/docs-angular.git"
+    "url": "git+https://github.com/ProfessorManhattan/docs-docker.git"
   },
   "bugs": {
     "email": "help@megabyte.space",
-    "url": "https://gitlab.com/megabyte-labs/documentation/angular/-/issues"
+    "url": "https://gitlab.com/megabyte-labs/documentation/dockerfile/-/issues"
   },
   "type": "module",
   "scripts": {
@@ -37,13 +37,15 @@
     "handlebars-helpers": "^0.10.0"
   },
   "keywords": [
+    "common",
     "docker",
     "dockerfile",
     "dockerslim",
-    "common",
     "docs",
     "documentation",
     "megabytelabs",
+    "npm",
+    "package",
     "partials",
     "professormanhattan",
     "shared"
