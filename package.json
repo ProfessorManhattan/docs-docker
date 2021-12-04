@@ -1,8 +1,8 @@
 {
   "private": false,
-  "name": "@mblabs/docs-docker",
+  "name": "@installdoc/docs-docker",
   "version": "0.0.1",
-  "description": "Documentation partials used to generate documentation for Dockerfile/DockerSlim projects",
+  "description": "A collection of doc partials for Dockerfile projects",
   "license": "MIT",
   "author": "Brian Zalewski <brian@megabyte.space> (https://megabyte.space)",
   "homepage": "https://megabyte.space",
@@ -23,44 +23,23 @@
   },
   "config": {
     "commitizen": {
-      "path": "cz-emoji"
+      "path": "node_modules/cz-emoji-conventional"
     }
   },
-  "dependencies": {
-    "tslib": "^2.3.1"
-  },
-  "optionalDependencies": {
-    "chalk": "^4.1.2",
-    "inquirer": "^8.2.0",
-    "signale": "^1.4.0",
-    "string-break": "^1.2.0"
-  },
+  "dependencies": {},
+  "optionalDependencies": {},
   "devDependencies": {
-    "@commitlint/config-conventional": "^13.1.0",
-    "@mblabs/eslint-config": "^1.0.114",
-    "@mblabs/prettier-config": "^14.14.30",
-    "@mblabs/release-config": "^1.0.0",
-    "@typescript-eslint/eslint-plugin": "^5.2.0",
-    "commitlint-config-gitmoji": "^2.2.5",
-    "cz-conventional-changelog": "^3.3.0",
-    "glob": "^7.2.0",
-    "handlebars-helpers": "^0.10.0",
-    "semantic-release": "^18.0.0"
+    "@washingtondc/development": "^1.0.2",
+    "@washingtondc/prettier": "^1.0.0",
+    "@washingtondc/release": "^0.0.2",
+    "eslint-config-strict-mode": "^1.0.0",
+    "sleekfast": "^0.0.1"
   },
   "keywords": [
-    "common",
-    "docker",
-    "dockerfile",
-    "dockerslim",
-    "docs",
-    "documentation",
     "mblabs",
     "megabytelabs",
-    "npm",
-    "package",
-    "partials",
     "professormanhattan",
-    "shared"
+    "washingtondc"
   ],
   "engines": {
     "node": ">=14.18.0"
@@ -69,23 +48,35 @@
     "access": "public"
   },
   "blueprint": {
-    "description": "Documentation partials used to generate documentation for Dockerfile/DockerSlim projects",
-    "docs": {
-      "link": "https://megabyte.space/docs/documentation/dockerfile"
-    },
+    "description": "A collection of doc partials for Dockerfile projects",
+    "github_id": "R_kgDOGetbNw",
+    "gitlab_group_id": "11096751",
+    "gitlab_project_id": "25898919",
     "group": "documentation",
-    "name": "Dockerfile Documentation",
-    "overview": "This repository contains documentation partials used to generate documentation for Dockerfile/[DockerSlim](https://dockersl.im/) projects. It uses the partials in conjunction with customizable variables that are used to generate unique documentation that follow the same format. When this project is updated, the changes are propagated to the [Dockerfile common files repository](https://gitlab.com/megabyte-labs/common/dockerfile). From there, common files/documentation are propagated to individual Dockerfile projects.",
+    "name": "Docker Docs",
+    "overview": "This repository is home to a collection of documentation partials that are used to generate documentation for Dockerfile projects.",
+    "profile": {
+      "npmjs_organization": "installdoc"
+    },
     "repository": {
       "github": "https://github.com/ProfessorManhattan/docs-docker",
       "gitlab": "https://gitlab.com/megabyte-labs/documentation/dockerfile"
     },
     "slug": "docs-docker",
     "subgroup": "dockerfile",
-    "title": "Dockerfile-Project Documentation Partials"
+    "title": "Docker Project Documentation"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ],
+    "helpUrl": "https://megabyte.space/docs/contributing/commits"
   },
   "eslintConfig": {
-    "extends": "@mblabs/eslint-config"
+    "extends": "eslint-config-strict-mode",
+    "rules": {
+      "import/no-extraneous-dependencies": "off"
+    }
   },
   "funding": [
     {
@@ -119,7 +110,6 @@
       "task fix:json --"
     ],
     "**/*.sh": [
-      "task fix:shell --",
       "task lint:shell --"
     ],
     "**/*.toml": [
@@ -138,12 +128,12 @@
       "task image:compress --"
     ]
   },
-  "prettier": "@mblabs/prettier-config",
+  "prettier": "@washingtondc/prettier",
   "release": {
     "branches": [
       "master",
       "next"
     ],
-    "extends": "@mblabs/release-config"
+    "extends": "@washingtondc/release"
   }
 }
