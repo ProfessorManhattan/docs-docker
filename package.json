@@ -67,6 +67,16 @@
     "subgroup": "dockerfile",
     "title": "Docker Project Documentation"
   },
+  "changelog": {
+    "displayTypes": [
+      "feat",
+      "fix",
+      "perf",
+      "refactor",
+      "revert"
+    ],
+    "showAuthor": true
+  },
   "commitlint": {
     "extends": [
       "@commitlint/config-conventional"
