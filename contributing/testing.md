@@ -4,6 +4,8 @@ Testing is an **extremely important** part of contributing to this project. Befo
 
 {{docker_tests}}
 
+*Note: If you are interested in testing GitHub Actions, then you might be interested in [act](https://github.com/nektos/act). This is not integrated into our automated test flow but you can install it by running `task install:software:act`.*
+
 ### Testing DockerSlim Builds
 
 It is especially important to test DockerSlim builds. DockerSlim works by removing all the components in a container's operating system that it thinks are unnecessary. This can easily break things.
